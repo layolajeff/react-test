@@ -1,9 +1,13 @@
 function Todo ({title}) {
-    
+    function deleteTodo(id) {
+    console.log('deleteTodo()', title.toUpperCase())
+    }
+
     return (
         <div className="todo">
-        <h2>{title}</h2>
-        <button>Delete</button>
+        <p>{ title }</p>
+        
+        <button onClick = {() => deleteTodo(1)}>Delete</button>
       </div>
     )
 }
